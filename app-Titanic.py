@@ -12,6 +12,7 @@ st.write(df)
 
 # create a figure with three subplots, size should be (15, 5)
 fig, ax = plt.subplots(1,3,figsize = (15,5))
+plt.style.use('seaborn')
 
 # show the box plot for ticket price with different classes
 df[df.Pclass==1].Fare.plot.box(ax=ax[0])
